@@ -1,0 +1,28 @@
+    1  mkdir my-favorite-recipes && cd my-favorite-recipes
+    2  git init
+    3  mkdir src docs data
+    4  touch README.md src/app.txt data/recipes.txt
+    5  nano README.md
+    6  nano data/recipes.txt
+    7  nano src/app.txt
+    8  ls
+    9  ls -a
+   10  pwd
+   11  cat src/app.txt
+   12  less data/recipes.txt
+   13  cd data
+   14  cd ..
+   15  cp data/recipes.txt data/recipes_backup.txt
+   16  mkdir data/archive
+   17  cp data/recipes.txt data/archive/
+   18  rm data/recipes_backup.txt
+   19  mkdir tmp
+   20  touch tmp/test.txt
+   21  rm -r tmp
+   22  cp data/recipes.txt data/recipes_backup.txt
+   23  git add .
+   24  git commit -m "Init project: recipe list"
+   25  git branch -M main
+   26  git remote add origin https://github.com/zeninaleksej-create/my-favorite-recipes.git
+   27  git push -u origin main
+   28  history > commands.txt
